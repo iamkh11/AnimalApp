@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     GridView gridView;
 
-    String[] names = {"cat","rabbit","bat","crocodile","frog","horse","lion","mouse","panda","rabbit","tigre"};
-    int[] images = {R.drawable.cat,R.drawable.rabbit,R.drawable.bat,R.drawable.crocodile,R.drawable.frog,R.drawable.horse,R.drawable.lion,R.drawable.mouse,R.drawable.panda,R.drawable.rabbit,R.drawable.tigre };
+    String[] names = {"cat","rabbit","bat","crocodile","frog","horse","lion","mouse","panda","tigre"};
+    int[] images = {R.drawable.cat,R.drawable.rabbit,R.drawable.bat,R.drawable.crocodile,R.drawable.frog,R.drawable.horse,R.drawable.lion,R.drawable.mouse,R.drawable.panda,R.drawable.tigre };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

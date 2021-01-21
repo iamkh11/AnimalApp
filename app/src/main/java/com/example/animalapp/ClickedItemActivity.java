@@ -14,7 +14,7 @@ public class ClickedItemActivity extends AppCompatActivity {
 
     ImageView imageView;
     TextView textView;
-    Button bt;
+    Button bt,bt_stop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +24,68 @@ public class ClickedItemActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.tvName);
         bt = (Button) findViewById(R.id.clickme);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.lion);
+        bt_stop = (Button) findViewById(R.id.stopclick);
+
+        final MediaPlayer mp0 = MediaPlayer.create(this, R.raw.bat);
+        final MediaPlayer mp1 = MediaPlayer.create(this, R.raw.cat);
+        final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.crocodile);
+        final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.frog);
+        final MediaPlayer mp4 = MediaPlayer.create(this, R.raw.horse);
+        final MediaPlayer mp5 = MediaPlayer.create(this, R.raw.lion);
+        final MediaPlayer mp6 = MediaPlayer.create(this, R.raw.mouse);
+        final MediaPlayer mp7 = MediaPlayer.create(this, R.raw.panda);
+        final MediaPlayer mp8 = MediaPlayer.create(this, R.raw.rabbit);
+        final MediaPlayer mp9 = MediaPlayer.create(this, R.raw.tiger);
+
+
+
 
             bt.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    mp.start();
+                    if (textView.getText().toString().equals("bat")) {
+                    mp0.start();
+                }if(textView.getText().toString().equals("cat")) {
+                        mp1.start();
+                    }if(textView.getText().toString().equals("crocodile")) {
+                        mp2.start();
+                    }if(textView.getText().toString().equals("frog")) {
+                        mp3.start();
+                    }if(textView.getText().toString().equals("horse")) {
+                        mp4.start();
+                    }if(textView.getText().toString().equals("lion")) {
+                        mp5.start();
+                    }if(textView.getText().toString().equals("mouse")) {
+                        mp6.start();
+                    }if(textView.getText().toString().equals("panda")) {
+                        mp7.start();
+                    }if(textView.getText().toString().equals("rabbit")) {
+                        mp8.start();
+                    }if(textView.getText().toString().equals("tiger")) {
+                        mp9.start();
+                    }
+            }});
+
+
+        bt_stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                    mp0.stop();
+                    mp1.stop();
+                    mp2.stop();
+                    mp3.stop();
+                    mp4.stop();
+                    mp5.stop();
+                    mp6.stop();
+                    mp7.stop();
+                    mp8.stop();
+                    mp9.stop();
+
+
                 }
             });
+
 
 
         Intent intent = getIntent();
