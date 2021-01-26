@@ -71,20 +71,23 @@ public class ClickedItemActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                    mp0.stop();
-                    mp1.stop();
-                    mp2.stop();
-                    mp3.stop();
-                    mp4.stop();
-                    mp5.stop();
-                    mp6.stop();
-                    mp7.stop();
-                    mp8.stop();
-                    mp9.stop();
+                    mp0.release();
+                    mp1.release();
+                    mp2.release();
+                    mp3.release();
+                    mp4.release();
+                    mp5.release();
+                    mp6.release();
+                    mp7.release();
+                    mp8.release();
+                    mp9.release();
 
 
                 }
             });
+
+
+
 
 
 
@@ -99,7 +102,7 @@ public class ClickedItemActivity extends AppCompatActivity {
 
         }
 
-        //set value;
+
 
     }
 
